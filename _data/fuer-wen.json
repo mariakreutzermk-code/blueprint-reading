@@ -1,13 +1,19 @@
 {
   "title": "Für wen ist das Blueprint Reading?",
   "yes_items": [
-    {"item": "Wenn du ganzheitlich arbeitest und spürst, dass hinter dem, was deine Klientin erzählt, noch eine tiefere Ebene liegt – die du bisher nicht greifen konntest."},
-    {"item": "Wenn du manchmal merkst: dieser Ansatz müsste eigentlich funktionieren. Und trotzdem stockt es. Und du weißt nicht genau warum."},
-    {"item": "Wenn du deinen Klientinnen nicht nur gute Ergebnisse willst – sondern das Gefühl, vom ersten Tag an wirklich gesehen worden zu sein."}
+    "Wenn du ganzheitlich arbeitest und spürst, dass hinter dem, was deine Klientin erzählt, noch eine tiefere Ebene liegt, die du bisher nicht greifen konntest.",
+    {
+      "item": "Wenn du manchmal merkst: dieser Ansatz müsste eigentlich funktionieren. Und trotzdem stockt es. Und du weißt nicht genau warum."
+    },
+    "Wenn du deinen für Klientinnen nicht nur gute Ergebnisse willst, sondern das Gefühl, vom ersten Tag an wirklich gesehen worden zu sein. "
   ],
   "no_items": [
-    {"item": "Wenn du überzeugt bist, dass Fragen und Erfahrung allein ausreichen, um einen Menschen wirklich zu kennen."},
-    {"item": "Wenn du Human Design bereits selbst in deiner Arbeit nutzt."},
-    {"item": "Wenn du ein Add-on suchst, das sich gut anhört aber nichts an deiner eigentlichen Arbeit verändert."}
+    "Wenn du überzeugt bist, dass Fragen und Erfahrung allein ausreichen, um einen Menschen wirklich tief zu kennen.",
+    {
+      "item": "Wenn du Human Design bereits selbst in deiner Arbeit nutzt."
+    },
+    {
+      "item": "Wenn du ein Add-on suchst, das sich gut anhört aber nichts an deiner eigentlichen Arbeit verändert."
+    }
   ]
 }
