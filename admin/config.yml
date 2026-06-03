@@ -1,12 +1,81 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Content Manager</title>
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-</head>
-<body>
-  <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
-</body>
-</html>
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "seite"
+    label: "Landingpage Texte"
+    files:
+      - label: "Hero"
+        name: "hero"
+        file: "_data/hero.json"
+        fields:
+          - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+          - { label: "Headline", name: "headline", widget: "string" }
+          - { label: "Subheadline", name: "subheadline", widget: "string" }
+          - { label: "Button Text", name: "button_text", widget: "string" }
+      - label: "Das Problem"
+        name: "problem"
+        file: "_data/problem.json"
+        fields:
+          - { label: "Überschrift", name: "title", widget: "string" }
+          - { label: "Text", name: "body", widget: "markdown" }
+      - label: "Was es ist"
+        name: "was-es-ist"
+        file: "_data/was-es-ist.json"
+        fields:
+          - { label: "Überschrift", name: "title", widget: "string" }
+          - { label: "Text", name: "body", widget: "markdown" }
+      - label: "Wie es abläuft"
+        name: "ablauf"
+        file: "_data/ablauf.json"
+        fields:
+          - { label: "Überschrift", name: "title", widget: "string" }
+          - label: "Schritte"
+            name: "steps"
+            widget: "list"
+            fields:
+              - { label: "Titel", name: "title", widget: "string" }
+              - { label: "Text", name: "body", widget: "text" }
+      - label: "Für wen"
+        name: "fuer-wen"
+        file: "_data/fuer-wen.json"
+        fields:
+          - { label: "Überschrift", name: "title", widget: "string" }
+          - label: "Für dich (Punkte)"
+            name: "yes_items"
+            widget: "list"
+            field: { label: "Punkt", name: "item", widget: "text" }
+          - label: "Nicht für dich (Punkte)"
+            name: "no_items"
+            widget: "list"
+            field: { label: "Punkt", name: "item", widget: "text" }
+      - label: "Über Maria"
+        name: "maria"
+        file: "_data/maria.json"
+        fields:
+          - { label: "Überschrift", name: "title", widget: "string" }
+          - { label: "Text", name: "body", widget: "markdown" }
+          - { label: "Foto", name: "photo", widget: "image", required: false }
+      - label: "Testimonials"
+        name: "testimonials"
+        file: "_data/testimonials.json"
+        fields:
+          - { label: "Überschrift", name: "title", widget: "string" }
+          - label: "Testimonials"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Zitat", name: "quote", widget: "text" }
+              - { label: "Name & Beschreibung", name: "author", widget: "string" }
+      - label: "Call to Action"
+        name: "cta"
+        file: "_data/cta.json"
+        fields:
+          - { label: "Headline", name: "headline", widget: "string" }
+          - { label: "Subtext", name: "subtext", widget: "string" }
+          - { label: "Button Text", name: "button_text", widget: "string" }
+          - { label: "Calendly Link", name: "calendly_link", widget: "string" }
